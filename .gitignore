@@ -3,3 +3,9 @@
 
 # Ignore all .out files
 *.out
+
+# Ignore everything in cmake-build-debug directory
+cmake-build-debug/
+
+# Ignore everything in .idea directory
+.idea/
