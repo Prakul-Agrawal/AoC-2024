@@ -1,0 +1,5 @@
+# Ignore all .txt files
+*.txt
+
+# Ignore all .out files
+*.out
