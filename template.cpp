@@ -48,11 +48,22 @@ string readFile(string filename) {
 void solve1() {
     string s = readFile("input.txt");
     istringstream iss(s);
+    string line;
+    vector<string> v;
+    while (getline(iss, line)) {
+        v.pb(line);
+    }
+
 }
 
 void solve2() {
     string s = readFile("input.txt");
     istringstream iss(s);
+    string line;
+    vector<string> v;
+    while (getline(iss, line)) {
+        v.pb(line);
+    }
 }
 
 int main() {
