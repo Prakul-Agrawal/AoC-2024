@@ -45,8 +45,8 @@ string readFile(string filename) {
     return s;
 }
 
-void solve1() {
-    string s = readFile("input.txt");
+void solve1(string &filename) {
+    string s = readFile(filename);
     istringstream iss(s);
     string line;
     vector<string> v;
@@ -56,8 +56,8 @@ void solve1() {
 
 }
 
-void solve2() {
-    string s = readFile("input.txt");
+void solve2(string &filename) {
+    string s = readFile(filename);
     istringstream iss(s);
     string line;
     vector<string> v;
@@ -66,9 +66,11 @@ void solve2() {
     }
 }
 
-int main() {
-    ios::sync_with_stdio(0); // To increase input-output speed
+int main(int argc, char* argv[]) {
+    ios::sync_with_stdio(0);
     cin.tie(0);
-    solve1();
-    solve2();
+
+    string filename = argc > 1 ? argv[1] : "large-input.txt";
+    solve1(filename);
+    solve2(filename);
 }
